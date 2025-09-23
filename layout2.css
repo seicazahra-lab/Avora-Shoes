@@ -6,137 +6,91 @@
   <title>Avora Shoe</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px;
-      border-bottom: 1px solid #ddd;
-    }
-    header img {
-      height: 20px;
-    }
-    .icons {
-      display: flex;
-      gap: 15px;
-    }
-    h2 {
-      margin: 20px 15px 10px;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-      gap: 15px;
-      padding: 0 15px 30px;
-    }
-    .product {
-      border: 1px solid #eee;
-      padding: 10px;
-      background: #fff;
-    }
-    .product img {
-      width: 100%;
-      border-radius: 5px;
-    }
-    .label {
-      color: orangered;
-      font-size: 14px;
-      font-weight: bold;
-    }
-    .title {
-      font-weight: bold;
-      margin: 5px 0;
-    }
-    .category {
-      color: gray;
-      font-size: 14px;
-      margin-bottom: 5px;
-    }
-    .price {
-      font-weight: bold;
-      font-size: 16px;
-    }
-/* Produk card */
-.product-card {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 12px;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
   text-align: center;
-  background: #fff;
-  width: 220px;
+  margin-bottom: 30px;
+  color: #333;
 }
 
-.product-card img {
-  width: 100%;
-  border-radius: 6px;
-}
-
-.product-card .title {
-  font-weight: bold;
-  margin: 6px 0;
-}
-
-.product-card .price {
-  color: #e74c3c;
-  font-weight: bold;
-  margin: 6px 0;
-}
-
-/* Pilih size */
-.size-selector {
-  margin: 10px 0;
-}
-
-.size-selector p {
-  font-size: 14px;
-  margin-bottom: 6px;
-  font-weight: bold;
-}
-
-.size-options {
-  display: flex;
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
   justify-content: center;
-  gap: 6px;
-  flex-wrap: wrap;
 }
 
-.size-options input[type="radio"] {
-  display: none;
+.product {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out;
 }
 
-.size-options label {
-  border: 1px solid #333;
-  border-radius: 5px;
-  padding: 6px 10px;
+.product:hover {
+  transform: translateY(-5px);
+}
+
+.product img {
+  width: 100%;
+  height: 200px;       /* semua gambar seragam */
+  object-fit: cover;   /* menjaga proporsi gambar */
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.product h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+  color: #222;
+}
+
+.product .category {
   font-size: 14px;
-  cursor: pointer;
-  transition: all 0.2s ease;
+  color: #777;
+  margin-bottom: 5px;
 }
 
-.size-options input[type="radio"]:checked + label {
-  background: #333;
-  color: #fff;
-}
-
-/* Tombol Add to Cart */
-.add-cart {
-  margin-top: 10px;
-  padding: 8px 16px;
-  border: none;
-  border-radius: 6px;
-  background-color: #27ae60;
-  color: white;
-  font-size: 14px;
+.product .price {
+  font-size: 16px;
   font-weight: bold;
+  color: #e74c3c;
+  margin-bottom: 10px;
+}
+
+.sizes span {
+  display: inline-block;
+  background: #f1f1f1;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 3px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: background 0.2s;
 }
 
-.add-cart:hover {
-  background-color: #219150;
+.sizes span:hover {
+  background: #ddd;
 }
 
+.add-to-cart {
+  background: #2ecc71;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.add-to-cart:hover {
+  background: #27ae60;
+}
