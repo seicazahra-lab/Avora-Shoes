@@ -81,32 +81,3 @@
       font-weight: bold;
       margin-top: 5px;
     }
-
-
-/* Dropdown pilihan size */
-.card select {
-  padding: 6px 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 14px;
-  cursor: pointer;
-}
-
-/* Tombol add to cart */
-.card button {
-  background-color: orangered;
-  color: #fff;
-  border: none;
-  padding: 8px;
-  border-radius: 5px;
-  font-size: 14px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.2s ease;
-}
-
-.card button:hover {
-  background-color: darkred;
-}
-  </style>
-
