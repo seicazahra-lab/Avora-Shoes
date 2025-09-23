@@ -81,12 +81,7 @@
       font-weight: bold;
       margin-top: 5px;
     }
-.card .actions {
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
+
 
 /* Dropdown pilihan size */
 .card select {
@@ -114,3 +109,4 @@
   background-color: darkred;
 }
   </style>
+
