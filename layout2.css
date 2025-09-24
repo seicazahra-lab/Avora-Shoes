@@ -1,10 +1,4 @@
 css
-
-    <!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Avora Shoe</title>
   <style>
     body {
@@ -61,4 +55,5 @@ css
     .price {
       font-weight: bold;
       font-size: 16px;
+
     }
