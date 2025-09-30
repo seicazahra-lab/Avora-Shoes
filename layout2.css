@@ -57,3 +57,34 @@ css
       font-size: 16px;
 
     }
+product-size {
+  font-family: Arial, sans-serif;
+  margin: 20px 0;
+}
+
+.product-size label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.product-size select {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.product-size .size-guide-link {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 12px;
+  color: #0071e3;
+  text-decoration: none;
+}
+
+.product-size .size-guide-link:hover {
+  text-decoration: underline;
+}
