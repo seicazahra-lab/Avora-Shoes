@@ -1,0 +1,119 @@
+<html>
+<head>
+<title> Avora Shoes</title>
+<link rel="stylesheet" href=layout.css>
+<link rel="stylesheet" href="layout2.css"
+
+	<img src="Men.gif" width="1300" height="450"></center>
+	
+	<nav>
+<ul> 
+	<li><a href="Index.html"target=_blank">Home</a></li>
+	<li><a href="Profile.html">Profile</a></li>
+	<li>
+		<a href="#">All Product</a>
+	<ul> 
+		<li><a href="Men.html">Men</a></li>
+		<li><a href="Woman.html">Woman</a></li>
+		<li><a href="Kids.html">Kids</a></li>
+                <li><a href="Shop Icons & By Sport.html">Shop Icons & By Sport</a></li>
+		
+	</ul>
+              
+              <li><a href="Sale.html">Sale</a></li>
+	      <li><a href="Bag.html">Bag</a></li>
+              <li><a href="Order.html">Order</a></li>
+              </li>
+
+	</nav>
+ </style>
+</head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  .size-selector {
+    max-width: 350px;
+    margin: 20px auto;
+  }
+  .size-selector label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 25px;
+  }
+  .sizes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .size-btn {
+    padding: 12px 0;
+    border: 1px solid #ccc;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    user-select: none;
+    transition: background-color 0.2s, border-color 0.2s, transform 0.2s ease;
+  }
+  .size-btn:hover {
+    border-color: #a5e8dd;
+    transform: scale(0.95); /* Shrink effect */
+  }
+  .size-btn.selected {
+    background-color: #a5e8dd;
+    color: white;
+    border-color: #a5e8dd;
+  }
+ 
+  .size-guide-link:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+<table>
+<tr>
+<td> 
+<img src = "men1.jpg" width="300" length="75" >
+</td>
+<td>
+<div class="size-selector">
+  <label>Select Size</label>
+  <div class="sizes-grid">
+    <button type="button" class="size-btn" data-size="35.5">35.5</button>
+    <button type="button" class="size-btn" data-size="36">36</button>
+    <button type="button" class="size-btn" data-size="36.5">36.5</button>
+    <button type="button" class="size-btn" data-size="37.5">37.5</button>
+    <button type="button" class="size-btn" data-size="38">38</button>
+    <button type="button" class="size-btn" data-size="38.5">38.5</button>
+    <button type="button" class="size-btn" data-size="39">39</button>
+    <button type="button" class="size-btn" data-size="40">40</button>
+    <button type="button" class="size-btn" data-size="40.5">40.5</button>
+  </div>
+</td>
+</tr>
+</table
+</div>
+
+<script>
+  const buttons = document.querySelectorAll('.size-btn');
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      buttons.forEach(b => b.classList.remove('selected'));
+      btn.classList.add('selected');
+      console.log('Size dipilih:', btn.dataset.size);
+    });
+  });
+</script>
+</body>
+
+<hr>
+<center><div>Copyright & Copy;2025by SEICA-IF1</div></center>
+</body>
+</html>
+
+	
+	
