@@ -57,7 +57,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: #1a3b6e;
+  background-color: #f5d7a6;
   border-radius: 6px;
 }
 
@@ -98,10 +98,11 @@ nav ul li ul.dropdown li a:hover {
 
 
 footer {
-  background-color: #0A1F44;
+  background-color: #f5d7a6;
   color: white;
   text-align: center;
   padding: 15px;
   margin-top: 40px;
 }
+
 
