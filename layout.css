@@ -7,7 +7,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #d3f075; 
-  color: #f0f0f0;
+  color: #383b2f;
   line-height: 1.6;
 }
 
@@ -104,5 +104,6 @@ footer {
   padding: 15px;
   margin-top: 40px;
 }
+
 
 
