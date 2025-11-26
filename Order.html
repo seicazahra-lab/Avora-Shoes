@@ -1,38 +1,155 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title> Avora Shoes</title>
-<link rel="stylesheet" href=layout.css>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avora Shoes - Order</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    nav {
+      width: 100%;
+      background: #333;
+      padding: 10px 0;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+    nav ul li {
+      position: relative;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    nav ul li:hover > a {
+      color: #71b7e6;
+    }
+    nav ul li ul.dropdown {
+      display: none;
+      position: absolute;
+      top: 30px;
+      background: #444;
+      padding: 10px;
+      border-radius: 5px;
+      flex-direction: column;
+    }
+    nav ul li:hover ul.dropdown {
+      display: flex;
+    }
+    nav ul li ul.dropdown li {
+      margin: 5px 0;
+    }
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      color: #fff;
+    }
+    .banner {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .banner img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+  </style>
 </head>
 <body>
-	<img src="Order.gif" width="1450" height="450"></center>
-	
-	<nav>
-<ul> 
-	<li><a href="index.html"target=_blank">Home</a></li>
-	<li><a href="Profile.html">Profile</a></li>
-	<li>
-		<a href="#">All Product</a>
-	<ul class="dropdown">
-		<li><a href="Men.html">Men</a></li>
-		<li><a href="Women.html">Women</a></li>
-		<li><a href="Kids.html">Kids</a></li>
-                <li><a href="Shop Icons & By Sport.html">Shop Icons & By Sport</a></li>
-	</ul>
-              
-              <li><a href="Sale.html">Sale</a></li>
-	      <li><a href="Bag.html">Bag</a></li>
-              <li><a href="Order.html">Order</a></li>
-              </li>
 
-	</nav>
+  <div class="banner">
+    <img src="Order.gif" alt="Order Banner" />
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="index.html" target="_blank">Home</a></li>
+      <li><a href="Profile.html">Profile</a></li>
+      <li>
+        <a href="#">All Product</a>
+        <ul class="dropdown">
+          <li><a href="Men.html">Men</a></li>
+          <li><a href="Women.html">Women</a></li>
+          <li><a href="Kids.html">Kids</a></li>
+          <li><a href="Shop Icons & By Sport.html">Shop Icons & By Sport</a></li>
+        </ul>
+      </li>
+      <li><a href="Sale.html">Sale</a></li>
+      <li><a href="Bag.html">Bag</a></li>
+      <li><a href="Order.html">Order</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="title">Order Form</div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="email" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" placeholder="Enter your number" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Address</span>
+            <input type="text" placeholder="Enter your address" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Product Name</span>
+            <input type="text" placeholder="Enter product name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Size</span>
+            <input type="text" placeholder="Example: 40, 41, 42" required>
+          </div>
+        </div>
+
+        <div class="gender-details">
+          <span class="gender-title">Payment Method</span>
+          <div class="category">
+            <label for="dot-1">
+              <span class="dot one"></span>
+              <span class="gender">Bank Transfer</span>
+            </label>
+            <label for="dot-2">
+              <span class="dot two"></span>
+              <span class="gender">COD</span>
+            </label>
+            <label for="dot-3">
+              <span class="dot three"></span>
+              <span class="gender">E-Wallet</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="button">
+          <input type="submit" value="Submit Order">
+        </div>
+      </form>
+    </div>
+  </div>
 
 
-<hr>
-<footer>
-<p>Copyright & Copy;2025by SEICA-IF1</p>	
-</footer>
+  <footer>
+    <p>Copyright © 2025 by SEICA-IF1</p>
+  </footer>
+
 </body>
 </html>
+
+
 
 
 
